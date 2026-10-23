@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>支持 · Support</title>
+<style>
+  :root {
+    --bg: #FFFFFF; --fg: #1B1C1A; --muted: #5F5E5A; --line: rgba(0,0,0,.12);
+    --accent: #0F6E56; --soft: #F1F0EC;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #14161A; --fg: #ECEEEC; --muted: #9A9C98; --line: rgba(255,255,255,.14);
+            --accent: #5DCAA5; --soft: #1D2025; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.72 -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans",
+          "Noto Sans JP", "PingFang SC", "Microsoft YaHei", sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 40px 22px 80px; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 34px; }
+  nav button {
+    font: inherit; font-size: 13px; padding: 5px 11px; cursor: pointer;
+    color: var(--muted); background: transparent; border: 1px solid var(--line);
+    border-radius: 999px;
+  }
+  nav button[aria-pressed="true"] { color: var(--bg); background: var(--accent); border-color: var(--accent); }
+  h1 { font-size: 27px; line-height: 1.3; margin: 0 0 6px; letter-spacing: -.01em; }
+  .sub { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
+  dl { margin: 0; }
+  dt { font-size: 15.5px; font-weight: 600; margin: 26px 0 6px; }
+  dd { margin: 0; font-size: 15px; color: var(--fg); }
+  .box {
+    background: var(--soft); border-radius: 8px; padding: 16px 18px; margin-top: 44px;
+    font-size: 15px;
+  }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: 13px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <button data-set="zh-Hans">简体中文</button>
+    <button data-set="zh-Hant">繁體中文</button>
+    <button data-set="en">English</button>
+    <button data-set="ja">日本語</button>
+    <button data-set="ru">Русский</button>
+  </nav>
+
+  <section data-lang="zh-Hans">
+    <h1>支持</h1>
+    <p class="sub">乒乓计分板 · 常见问题</p>
+    <dl>
+      <dt>记错分了，怎么退回去？</dt>
+      <dd>记分屏上有「撤销」按钮，点一次退一分。撤销只退最近一步，连续点可以一直退回开局。</dd>
+
+      <dt>局数、每局分数、首先发球在哪里改？</dt>
+      <dd>都在开赛页选。比赛进行中不能改设置，需要先回到开赛页重新开始一局比赛。</dd>
+
+      <dt>记到一半退出，或者来个电话，数据会丢吗？</dt>
+      <dd>不会。退出应用甚至强制关闭后重新打开，会直接回到记分屏，局分和比分都保留。</dd>
+
+      <dt>换手机以后，历史记录会同步过去吗？</dt>
+      <dd>不会。这个应用没有账号也没有云同步，所有记录只存在原来那台手机上。删掉应用，记录也会一起删掉。</dd>
+
+      <dt>打到 10:10 之后怎么算？</dt>
+      <dd>进入延长分（deuce），必须净胜两分才算赢下这一局。接近局点时会显示提示。</dd>
+
+      <dt>决胜局有换边提醒吗？</dt>
+      <dd>有。到达该换边的分数时，屏幕顶部会出现一条提示条，不打断记分。</dd>
+
+      <dt>支持哪些语言？</dt>
+      <dd>简体中文、繁体中文、英语、日语、俄语，跟随系统语言自动切换。</dd>
+
+      <dt>可以把比分发给朋友吗？</dt>
+      <dd>可以。比赛结果页有分享按钮，会生成一张比分卡图片，通过系统分享面板发送。</dd>
+    </dl>
+
+    <div class="box">
+      <strong>没找到答案？</strong><br>
+      发邮件到 <a href="mailto:rankor@sina.com">rankor@sina.com</a>，
+      请附上机型、系统版本和复现步骤，一般会在两个工作日内回复。
+    </div>
+  </section>
+
+  <section data-lang="zh-Hant" hidden>
+    <h1>支援</h1>
+    <p class="sub">乒乓計分板 · 常見問題</p>
+    <dl>
+      <dt>記錯分了，怎麼退回上一分？</dt>
+      <dd>計分畫面有「復原」按鈕，按一次退一分。只會退回最近一步，連續按可以一路退回開局。</dd>
+
+      <dt>局數、每局分數、首先發球在哪裡設定？</dt>
+      <dd>都在開賽頁選擇。比賽進行中無法變更設定，需要先回開賽頁重新開始一場比賽。</dd>
+
+      <dt>記到一半離開，或接到電話，資料會不見嗎？</dt>
+      <dd>不會。離開 App 甚至強制關閉後再打開，會直接回到計分畫面，局數與比分都保留。</dd>
+
+      <dt>換手機之後，歷史紀錄會同步嗎？</dt>
+      <dd>不會。這個 App 沒有帳號也沒有雲端同步，所有紀錄只存在原本那支手機上。移除 App，紀錄也會一起刪除。</dd>
+
+      <dt>打到 10:10 之後怎麼計算？</dt>
+      <dd>進入延長分（deuce），必須淨贏兩分才算拿下該局。接近局點時會有提示。</dd>
+
+      <dt>決勝局有換邊提醒嗎？</dt>
+      <dd>有。到達換邊分數時，畫面頂端會出現提示條，不會中斷計分。</dd>
+
+      <dt>支援哪些語言？</dt>
+      <dd>繁體中文、簡體中文、英文、日文、俄文，依系統語言自動切換。</dd>
+
+      <dt>可以把比分傳給朋友嗎？</dt>
+      <dd>可以。比賽結果頁有分享按鈕，會產生一張比分卡圖片，透過系統分享面板傳送。</dd>
+    </dl>
+
+    <div class="box">
+      <strong>找不到答案？</strong><br>
+      寄信到 <a href="mailto:rankor@sina.com">rankor@sina.com</a>，
+      請附上機型、系統版本與重現步驟，通常會在兩個工作天內回覆。
+    </div>
+  </section>
+
+  <section data-lang="en" hidden>
+    <h1>Support</h1>
+    <p class="sub">Ping Pong Scoreboard · Frequently asked questions</p>
+    <dl>
+      <dt>I scored a point by mistake. How do I undo it?</dt>
+      <dd>Tap Undo on the score screen to take back one point. It only steps back the most recent action, and you can keep tapping to return to the start of the match.</dd>
+
+      <dt>Where do I change games per match, points per game, or who serves first?</dt>
+      <dd>All of it is set on the start screen. Settings can't be changed mid-match — go back to the start screen and begin a new match.</dd>
+
+      <dt>If I leave the app during a match, or get a phone call, do I lose the score?</dt>
+      <dd>No. Reopening the app, even after force-quitting it, returns you straight to the score screen with the game and point scores intact.</dd>
+
+      <dt>Will my history transfer to a new phone?</dt>
+      <dd>No. The app has no accounts and no cloud sync, so every record stays on the original device. Deleting the app deletes them as well.</dd>
+
+      <dt>What happens after 10–10?</dt>
+      <dd>The game goes to deuce: you need a two-point lead to win it. A hint appears as you approach game point.</dd>
+
+      <dt>Is there a reminder to switch ends in the deciding game?</dt>
+      <dd>Yes. When the switching score is reached, a banner appears at the top of the screen without interrupting play.</dd>
+
+      <dt>Which languages are supported?</dt>
+      <dd>Simplified Chinese, Traditional Chinese, English, Japanese and Russian. The app follows your system language.</dd>
+
+      <dt>Can I send the score to a friend?</dt>
+      <dd>Yes. The result screen has a share button that renders a score card and hands it to the system share sheet.</dd>
+    </dl>
+
+    <div class="box">
+      <strong>Still stuck?</strong><br>
+      Email <a href="mailto:rankor@sina.com">rankor@sina.com</a> with your device model,
+      iOS version and the steps that led to the problem. We usually reply within two business days.
+    </div>
+  </section>
+
+  <section data-lang="ja" hidden>
+    <h1>サポート</h1>
+    <p class="sub">ピンポン記録 · よくある質問</p>
+    <dl>
+      <dt>点数を間違えて記録しました。取り消せますか。</dt>
+      <dd>スコア画面の「取り消し」を押すと 1 点戻ります。直前の 1 手だけが戻り、続けて押せば試合開始まで戻せます。</dd>
+
+      <dt>ゲーム数、1 ゲームの点数、最初のサーブはどこで変えますか。</dt>
+      <dd>すべて開始画面で設定します。試合中は変更できないため、開始画面に戻って新しく試合を始めてください。</dd>
+
+      <dt>試合中にアプリを閉じたり、電話が来たりしたら記録は消えますか。</dt>
+      <dd>消えません。アプリを終了しても、開き直すとスコア画面に戻り、ゲームカウントと点数はそのまま残ります。</dd>
+
+      <dt>機種変更すると履歴は引き継げますか。</dt>
+      <dd>引き継げません。アカウントもクラウド同期もないため、記録は元の端末にだけ残ります。アプリを削除すると記録も削除されます。</dd>
+
+      <dt>10 対 10 になったらどうなりますか。</dt>
+      <dd>デュースとなり、2 点差がつくまでゲームは終わりません。ゲームポイントが近づくと表示で知らせます。</dd>
+
+      <dt>最終ゲームのエンドチェンジは知らせてくれますか。</dt>
+      <dd>はい。チェンジの点数に達すると画面上部にバナーが出ます。記録の操作は妨げません。</dd>
+
+      <dt>対応している言語は。</dt>
+      <dd>簡体字中国語、繁体字中国語、英語、日本語、ロシア語です。端末の言語に自動で合わせます。</dd>
+
+      <dt>スコアを友人に送れますか。</dt>
+      <dd>送れます。結果画面の共有ボタンでスコアカード画像を作成し、iOS の共有シートから送信できます。</dd>
+    </dl>
+
+    <div class="box">
+      <strong>解決しない場合</strong><br>
+      <a href="mailto:rankor@sina.com">rankor@sina.com</a> まで、
+      端末の機種、iOS のバージョン、再現手順を添えてご連絡ください。通常 2 営業日以内に返信します。
+    </div>
+  </section>
+
+  <section data-lang="ru" hidden>
+    <h1>Поддержка</h1>
+    <p class="sub">Пинг-понг · Частые вопросы</p>
+    <dl>
+      <dt>Я записал очко по ошибке. Как отменить?</dt>
+      <dd>Нажмите «Отменить» на экране счёта — вернётся одно очко. Отменяется только последнее действие, повторные нажатия доведут до начала матча.</dd>
+
+      <dt>Где изменить число партий, очков в партии и первую подачу?</dt>
+      <dd>Всё задаётся на стартовом экране. Во время матча настройки изменить нельзя — вернитесь на стартовый экран и начните новый матч.</dd>
+
+      <dt>Если я выйду из приложения или поступит звонок, счёт потеряется?</dt>
+      <dd>Нет. После повторного открытия, даже если приложение было принудительно закрыто, вы вернётесь на экран счёта с сохранёнными партиями и очками.</dd>
+
+      <dt>История перенесётся на новый телефон?</dt>
+      <dd>Нет. В приложении нет аккаунтов и облачной синхронизации, поэтому записи остаются только на исходном устройстве. Удаление приложения удаляет и их.</dd>
+
+      <dt>Что происходит после счёта 10:10?</dt>
+      <dd>Наступает «больше-меньше»: для победы в партии нужен перевес в два очка. При приближении к сетболу появляется подсказка.</dd>
+
+      <dt>Есть напоминание о смене сторон в решающей партии?</dt>
+      <dd>Да. При достижении нужного счёта сверху появляется баннер, не мешая вести счёт.</dd>
+
+      <dt>Какие языки поддерживаются?</dt>
+      <dd>Упрощённый и традиционный китайский, английский, японский и русский. Приложение следует языку системы.</dd>
+
+      <dt>Можно отправить счёт другу?</dt>
+      <dd>Да. На экране результата есть кнопка «Поделиться»: она создаёт карточку счёта и передаёт её системному меню.</dd>
+    </dl>
+
+    <div class="box">
+      <strong>Не нашли ответ?</strong><br>
+      Напишите на <a href="mailto:rankor@sina.com">rankor@sina.com</a>, указав модель
+      устройства, версию iOS и шаги, после которых возникла проблема. Обычно отвечаем в течение двух рабочих дней.
+    </div>
+  </section>
+
+  <footer>
+    <span data-lang="zh-Hans">另见：<a href="privacy.html">隐私政策</a></span>
+    <span data-lang="zh-Hant" hidden>另見：<a href="privacy.html">隱私政策</a></span>
+    <span data-lang="en" hidden>See also: <a href="privacy.html">Privacy Policy</a></span>
+    <span data-lang="ja" hidden>関連：<a href="privacy.html">プライバシーポリシー</a></span>
+    <span data-lang="ru" hidden>См. также: <a href="privacy.html">Политика конфиденциальности</a></span>
+  </footer>
+</div>
+<script>
+(function () {
+  var LANGS = ['zh-Hans', 'zh-Hant', 'en', 'ja', 'ru'];
+  var buttons = document.querySelectorAll('[data-set]');
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-lang]').forEach(function (el) {
+      el.hidden = el.getAttribute('data-lang') !== lang;
+    });
+    buttons.forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-set') === lang));
+    });
+    try { localStorage.setItem('pp-lang', lang); } catch (e) {}
+  }
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () { setLang(b.getAttribute('data-set')); });
+  });
+  var saved = null;
+  try { saved = localStorage.getItem('pp-lang'); } catch (e) {}
+  var nav = (navigator.language || 'en');
+  var guess = saved;
+  if (!guess) {
+    if (nav.indexOf('zh') === 0) {
+      guess = /TW|HK|MO|Hant/.test(nav) ? 'zh-Hant' : 'zh-Hans';
+    } else if (nav.indexOf('ja') === 0) { guess = 'ja'; }
+    else if (nav.indexOf('ru') === 0) { guess = 'ru'; }
+    else { guess = 'en'; }
+  }
+  setLang(LANGS.indexOf(guess) >= 0 ? guess : 'en');
+})();
+</script>
+</body>
+</html>
